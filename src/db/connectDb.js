@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 
-const connectDb = (dbString, dbUser, dbPassword) => {
+const connectDb = (dbUrl, dbUser, dbPassword) => {
   mongoose.set("strictQuery", false);
-  mongoose.connect(dbString, {
+  mongoose.connect(dbUrl, {
     authSource: "admin",
     auth: { username: "admin", password: "1366516" },
   });

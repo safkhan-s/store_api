@@ -6,6 +6,6 @@ services:
     ports:
       - 27017:27017
     volumes:
-      - store_api_db:data/db
+      - store_api_db:/data/db
 volumes:
   store_api_db:
